@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <style>
+        body { margin: 0; padding: 0; }
+        html { height: 100%; cursor: default; }
+        body {
+            font-family: "Roboto", sans-serif; /* Default font */
+            width: 100%; height: 100%;
+            text-align: center;
+            display: table;
+            opacity: 1;
+            animation: fadein 3s forwards;
+        }
+        h2 {
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+        img {
+            width: 25%; /* Image width */
+            border: 0; /* For IE */
+            margin-right: 1.5rem;
+        }
+        #main {
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+        /* Fades in animation */
+        @keyframes fadein  {
+            from { opacity: 0; }
+        }
+        /* Animates bar on page load */
+        @keyframes proanimate {
+            from { width: 0%; }
+        }
+
+        @media screen and (max-width:600px) {
+            img {
+                width: 60%;
+            }
+            h1 {
+                font-size: 1.3em;
+            }
+            h2 {
+                margin: 1.1em;
+                font-size: 1.1em;
+            }
+        }
+    </style>
+    <title>Kommer Snart</title>
+</head>
+<body>
+    <div id="main">
+        <img src="assets/grattings-maleri.svg" alt="">
+        <h1>404</h1>
+        <h2>Sidan du söker verkar inte finnas</h2>
+        <br>
+        <h2><b>Tillbaka till <a href="/">grattingsmaleri.se</a></b><h2>
+    </div>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</body>
+</html>
